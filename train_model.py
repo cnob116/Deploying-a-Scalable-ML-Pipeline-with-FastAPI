@@ -14,7 +14,7 @@ from ml.model import (
     train_model,
 )
 
-
+#the census data is loaded
 # TODO: load the cencus.csv data
 project_path = "/Users/caitlinhowe/PycharmProjects/Deploying-a-Scalable-ML-Pipeline-with-FastAPI/"
 data_path = os.path.join(project_path, "data", "census.csv")
@@ -37,6 +37,7 @@ cat_features = [
     "native-country",
 ]
 
+#
 # TODO: use the process_data function provided to process the data.
 X_train, y_train, encoder, lb = process_data(
     # your code here
