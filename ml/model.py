@@ -1,5 +1,9 @@
-import pickle
+
+import os
+import joblib
 from sklearn.metrics import fbeta_score, precision_score, recall_score
+from sklearn.ensemble import RandomForestClassifier
+
 from ml.data import process_data
 # TODO: add necessary import
 
@@ -79,14 +83,14 @@ def save_model(model, path):
     """
     # TODO: implement the function
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    joblib.dump(obj, path)
+    joblib.dump(model, path)
 
 
 def load_model(path):
     """ Loads pickle file from `path` and returns it."""
     # TODO: implement the function
     with open(path, 'rb') as f:
-        model = pickle.load(f)
+        model = joblib.load(f)
     return model
 
 
