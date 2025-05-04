@@ -17,7 +17,7 @@ from ml.model import (
 #the census data is loaded
 # TODO: load the cencus.csv data
 project_path = "/Users/caitlinhowe/PycharmProjects/Deploying-a-Scalable-ML-Pipeline-with-FastAPI/"
-data_path = os.path.join(project_path, "data", "census.csv")
+data_path = os.path.join(project_path, "data", "census1.csv")
 print(data_path)
 data = pd.read_csv(data_path) # your code here
 
