@@ -11,7 +11,7 @@ r = None # Your code here
 # print()
 
 
-
+#data
 data = {
     "age": 37,
     "workclass": "Private",
